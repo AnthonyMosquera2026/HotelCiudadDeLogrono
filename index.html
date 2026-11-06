@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Ciudad de Logroño</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body class="bg-secondary">
+    <!-- Marco "movil": columna central que se estrecha en pantallas grandes -->
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-8 col-md-6 col-lg-5 col-xl-4 p-0 bg-white shadow">
+
+                <!-- ================= HEADER ================= -->
+                <header>
+                    <div class="bg-dark text-white small py-2 px-4 d-flex justify-content-between align-items-center">
+                        <span><i class="bi bi-telephone me-2"></i>+34 941 25 02 44</span>
+                        <span><i class="bi bi-envelope me-2"></i>hotelciudad@pretur.com</span>
+                    </div>  
+
+                    <div class="bg-white border-bottom px-4 py-3 d-flex justify-content-between align-items-center">
+                        <div class="d-flex flex-column">
+                            <span class="h2 fw-bold text-dark lh-1 m-0">HCL</span>
+                            <span class="small text-secondary text-uppercase text-nowrap">Hotel Ciudad de Logroño</span>
+                        </div>
+                        <button class="btn btn-light rounded-circle" type="button" aria-label="Menú">
+                            <i class="bi bi-list fs-3"></i>
+                        </button>
+                    </div>
+                </header>
+
+                <main>
+
+                    <!-- ================= HERO ================= -->
+                    <section class="ratio ratio-1x1 bg-dark">
+                        <div class="card bg-dark text-white border-0 rounded-0">
+                            <img src="images/portada.jpg" class="card-img h-100 rounded-0" alt="Hotel Ciudad de Logroño"
+                                style="background-color: grey; opacity: 50%;">
+                            <div class="card-img-overlay d-flex flex-column justify-content-end p-4">
+                                <div>
+                                    <span class="badge rounded-pill bg-light text-dark mb-2">WEB OFICIAL</span>
+                                </div>
+                                <h2 class="display-6 fw-bold">Hotel Ciudad de Logroño</h2>
+                                <p>Tu hotel a pocos minutos del casco antiguo y de la calle Laurel.</p>
+                                <div>
+                                    <a href="#promocion" class="btn me-2"
+                                        style="background-color: #D8401A; color: white;">Promoción web</a>
+                                    <a href="#habitaciones" class="btn btn-outline-light">Ver habitaciones</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- ================= BUSCADOR ================= -->
+                    <section class="bg-light p-3">
+                        <form class="card border-0 shadow rounded-3">
+                            <div class="card-body">
+                                <h3 class="h5 fw-bold mb-3">Reserva tu estancia</h3>
+
+                                <div class="row g-2 mb-2">
+                                    <div class="col-6">
+                                        <div class="form-floating">
+                                            <input type="date" class="form-control" id="entrada" placeholder="Entrada">
+                                            <label for="entrada">Entrada</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-floating">
+                                            <input type="date" class="form-control" id="salida" placeholder="Salida">
+                                            <label for="salida">Salida</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row g-2 mb-3">
+                                    <div class="col-4">
+                                        <div class="form-floating">
+                                            <select class="form-select" id="habitaciones">
+                                                <option selected>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                            </select>
+                                            <label for="habitaciones">Hab.</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="form-floating">
+                                            <select class="form-select" id="adultos">
+                                                <option>1</option>
+                                                <option selected>2</option>
+                                                <option>3</option>
+                                            </select>
+                                            <label for="adultos">Adultos</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="form-floating">
+                                            <select class="form-select" id="ninos">
+                                                <option selected>0</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                            </select>
+                                            <label for="ninos">Niños</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button type="button" class="btn btn-lg w-100 mb-2"
+                                    style="background-color: #D8401A; color: white;">Consultar disponibilidad</button>
+                                <p class="small text-secondary text-center mb-0">Cancelación gratuita hasta 48 h antes
+                                    de la entrada</p>
+                            </div>
+                        </form>
+                    </section>
+
+                    <!-- ================= NUESTRA PROPUESTA ================= -->
+                    <section class="p-4">
+                        <p class="text-uppercase small fw-bold mb-1" style="color: #D8401A;">Nuestra propuesta</p>
+                        <h2 class="fw-bold mb-3">Tu hotel en Logroño</h2>
+                        <p class="text-secondary">A pocos minutos del centro histórico y de la calle Laurel, con una
+                            excelente relación calidad-precio y una ubicación estratégica.</p>
+                        <p class="text-secondary">Tanto si vienes por ocio como por trabajo, encontrarás habitaciones
+                            amplias y luminosas pensadas para el descanso.</p>
+
+                        <div class="row g-2 mb-3">
+                            <div class="col-4">
+                                <div class="bg-light rounded-3 p-3 h-100">
+                                    <div class="fw-bold fs-5">750 m</div>
+                                    <div class="small text-secondary">hasta la calle Laurel</div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="bg-light rounded-3 p-3 h-100">
+                                    <div class="fw-bold fs-5">3</div>
+                                    <div class="small text-secondary">tipos de habitación</div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="bg-light rounded-3 p-3 h-100">
+                                    <div class="fw-bold fs-5">07:00</div>
+                                    <div class="small text-secondary">desayuno buffet</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row g-2">
+                            <div class="col-6">
+                                <img src="images/hall.jpg" class="img-fluid rounded-3" alt="Hall del hotel" style="width: 250px; height: 150px;">
+                            </div>
+                            <div class="col-6">
+                                <img src="images/hall2.jpg" class="img-fluid rounded-3" alt="Entrada del hotel" style="width: 250px; height: 150px;">
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- ================= HABITACIONES ================= -->
+                    <section id="habitaciones" class="bg-light py-4">
+                        <div class="px-4 mb-3 d-flex justify-content-between align-items-end">
+                            <div>
+                                <p class="text-uppercase small fw-bold mb-1" style="color: #D8401A;">Alojamiento</p>
+                                <h2 class="h4 fw-bold mb-0">Nuestras habitaciones</h2>
+                            </div>
+                            <a href="#" class="text-decoration-none fw-bold small text-nowrap" style="color: #D8401A;">
+                                Ver todas <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+
+                        <!-- Carrusel horizontal con scroll -->
+                        <div class="row flex-nowrap overflow-auto mx-0 px-3">
+                            <div class="col-9">
+                                <div class="card border-0 h-100">
+                                    <img src="images/habitacion1.jpg" class="card-img-top" alt="Habitación individual" style="width: 350px; height: 300px;">
+                                    <div class="card-body">
+                                        <h3 class="h6 fw-bold mb-1">Habitación individual</h3>
+                                        <p class="small text-secondary mb-2">21 m² · 1 persona</p>
+                                        <a href="#" class="small fw-bold text-decoration-none"
+                                            style="color: #D8401A;">Ver detalle <i class="bi bi-chevron-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <div class="card border-0 h-100">
+                                    <img src="images/habitacion2.jpg" class="card-img-top" alt="Habitación doble" style="width: 350px; height: 300px;">
+                                    <div class="card-body">
+                                        <h3 class="h6 fw-bold mb-1">Habitación doble</h3>
+                                        <p class="small text-secondary mb-2">25 m² · 2 personas máx.</p>
+                                        <a href="#" class="small fw-bold text-decoration-none"
+                                            style="color: #D8401A;">Ver detalle <i class="bi bi-chevron-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-9">
+                                <div class="card border-0 h-100">
+                                    <img src="images/habitacion3.jpg" class="card-img-top" alt="Habitación doble" style="width: 350px; height: 300px;">
+                                    <div class="card-body">
+                                        <h3 class="h6 fw-bold mb-1">Habitación Triple</h3>
+                                        <p class="small text-secondary mb-2">30 m² · 3 personas máx.</p>
+                                        <a href="#" class="small fw-bold text-decoration-none"
+                                            style="color: #D8401A;">Ver detalle <i class="bi bi-chevron-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- ================= PROMOCIÓN WEB ================= -->
+                    <section id="promocion" class="bg-dark text-white p-4">
+                        <p class="text-uppercase small fw-bold mb-1" style="color: #D8401A;">Promoción web</p>
+                        <h2 class="fw-bold mb-3">Reserva en la web oficial y disfruta de más</h2>
+
+                        <div class="row row-cols-2 g-3 mb-4">
+                            <div class="col">
+                                <div class="border border-secondary rounded-3 p-3 h-100">
+                                    <span class="rounded-circle d-inline-flex p-2 mb-2" style="color: #D8401A;"><i
+                                            class="bi bi-cup-hot fs-5"></i></span>
+                                    <h3 class="h6 fw-bold">Desayuno incluido</h3>
+                                    <p class="small text-white-50 mb-0">Buffet valorado en 12 €/persona y día</p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="border border-secondary rounded-3 p-3 h-100">
+                                    <span class="rounded-circle d-inline-flex p-2 mb-2" style="color: #D8401A;"><i
+                                            class="bi bi-percent fs-5"></i></span>
+                                    <h3 class="h6 fw-bold">10 % de descuento</h3>
+                                    <p class="small text-white-50 mb-0">Aplicado automáticamente sobre nuestro precio
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="border border-secondary rounded-3 p-3 h-100">
+                                    <span class="rounded-circle d-inline-flex p-2 mb-2" style="color: #D8401A;"><i
+                                            class="bi bi-credit-card fs-5"></i></span>
+                                    <h3 class="h6 fw-bold">Sin pagos por adelantado</h3>
+                                    <p class="small text-white-50 mb-0">No se cobra nada hasta tu salida</p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="border border-secondary rounded-3 p-3 h-100">
+                                    <span class="rounded-circle d-inline-flex p-2 mb-2" style="color: #D8401A;"><i
+                                            class="bi bi-calendar-check fs-5"></i></span>
+                                    <h3 class="h6 fw-bold">Cancelación gratuita</h3>
+                                    <p class="small text-white-50 mb-0">Hasta 48 h antes de la entrada</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#" class="btn btn-lg w-100" style="background-color: #D8401A; color: white;">Reservar
+                            con descuento</a>
+                    </section>
+
+                    <!-- ================= MÁS INFORMACIÓN ================= -->
+                    <section class="p-4">
+                        <p class="text-uppercase small fw-bold mb-1" style="color: #D8401A;">Durante su estancia</p>
+                        <h2 class="fw-bold mb-3">Más información</h2>
+
+                        <div class="list-group list-group-flush">
+                            <a href="#"
+                                class="list-group-item list-group-item-action px-0 d-flex justify-content-between align-items-center">
+                                <div>
+                                    <div class="fw-bold">Parking</div>
+                                    <div class="small text-secondary">Descubre el servicio de parking</div>
+                                </div>
+                                <i class="bi bi-chevron-right"></i>
+                            </a>
+                            <a href="#"
+                                class="list-group-item list-group-item-action px-0 d-flex justify-content-between align-items-center">
+                                <div>
+                                    <div class="fw-bold">Desayuno buffet</div>
+                                    <div class="small text-secondary">L–V 07:00–11:00 · S, D y festivos 07:30–12:00
+                                    </div>
+                                </div>
+                                <i class="bi bi-chevron-right"></i>
+                            </a>
+                            <a href="#"
+                                class="list-group-item list-group-item-action px-0 d-flex justify-content-between align-items-center">
+                                <div>
+                                    <div class="fw-bold">Eventos</div>
+                                    <div class="small text-secondary">Salas para reuniones y celebraciones</div>
+                                </div>
+                                <i class="bi bi-chevron-right"></i>
+                            </a>
+                            <a href="#"
+                                class="list-group-item list-group-item-action px-0 d-flex justify-content-between align-items-center">
+                                <div>
+                                    <div class="fw-bold">Bodas</div>
+                                    <div class="small text-secondary">Pide presupuesto y enlace de reservas para
+                                        invitados</div>
+                                </div>
+                                <i class="bi bi-chevron-right"></i>
+                            </a>
+                            <a href="mailto:grupos@pretur.com"
+                                class="list-group-item list-group-item-action px-0 d-flex justify-content-between align-items-center">
+                                <div>
+                                    <div class="fw-bold">Reservas de grupo</div>
+                                    <div class="small text-secondary">grupos@pretur.com</div>
+                                </div>
+                                <i class="bi bi-chevron-right"></i>
+                            </a>
+                        </div>
+                    </section>
+
+                    <!-- ================= UBICACIÓN ================= -->
+                    <section class="bg-light p-4">
+                        <p class="text-uppercase small fw-bold mb-1" style="color: #D8401A;">Ubicación</p>
+                        <h2 class="fw-bold mb-3">En el centro de la ciudad</h2>
+
+                        <div class="ratio ratio-16x9 mb-3">
+                            <div
+                                class="bg-secondary text-white rounded-3 d-flex flex-column justify-content-center align-items-center">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2943.4711479007674!2d-2.450321223416229!3d42.46026722876452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5aab4431d59f9f%3A0x61da43ba1b07fd0f!2sC.%20Men%C3%A9ndez%20Pelayo%2C%207%2C%2026002%20Logro%C3%B1o%2C%20La%20Rioja!5e0!3m2!1ses!2ses!4v1793877138942!5m2!1ses!2ses"
+                                    width="505" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                            </div>
+                        </div>
+
+                        <p class="text-secondary">Desde el hotel puedes ir a pie hasta la estación de tren y de autobús,
+                            el casco antiguo, las zonas comerciales y la famosa calle del Laurel.</p>
+
+                        <div>
+                            <span class="badge rounded-pill bg-white text-dark border fw-normal fs-6 me-1 mb-1">Estación
+                                de tren</span>
+                            <span class="badge rounded-pill bg-white text-dark border fw-normal fs-6 me-1 mb-1">Estación
+                                de autobús</span>
+                            <span class="badge rounded-pill bg-white text-dark border fw-normal fs-6 me-1 mb-1">Casco
+                                antiguo</span>
+                            <span class="badge rounded-pill bg-white text-dark border fw-normal fs-6 mb-1">Calle Laurel
+                                · 750 m</span>
+                        </div>
+                    </section>
+                </main>
+
+                <!-- ================= FOOTER ================= -->
+                <footer class="bg-dark text-white p-4">
+                    <div class="mb-3">
+                        <div class="h2 fw-bold lh-1 mb-1">HCL</div>
+                        <div class="small text-white-50 text-uppercase">Hotel Ciudad de Logroño</div>
+                    </div>
+                    <p class="mb-2"><i class="bi bi-telephone me-2"></i>+34 941 25 02 44</p>
+                    <p class="mb-2"><i class="bi bi-envelope me-2"></i>hotelciudad@pretur.com</p>
+                    <p class="mb-3"><i class="bi bi-geo-alt me-2"></i>C. Menéndez Pelayo, 7, 26002 Logroño, La Rioja</p>
+                    <hr class="border-secondary">
+                    <p class="small text-white-50 mb-0">© 2026 Hotel Ciudad de Logroño · Web oficial</p>
+                </footer>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5.0.2 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
