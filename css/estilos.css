@@ -8,6 +8,8 @@
     --hcl-acento-oscuro: #BF3716;
 }
 
+.logo-sub { font-size: 10px; font-weight: 500; letter-spacing: 1.2px; color: var(--hcl-muted); }
+
 /* ---------- Color de marca ---------- */
 .btn-hcl {
     background-color: var(--hcl-acento);
