@@ -1,0 +1,100 @@
+/* =========================================================
+   Hotel Ciudad de Logroño - estilos propios
+   Solo lo que Bootstrap 5.0.2 no trae; el resto son clases de Bootstrap.
+   ========================================================= */
+
+:root {
+    --hcl-acento: #D8401A;
+    --hcl-acento-oscuro: #BF3716;
+}
+
+/* ---------- Color de marca ---------- */
+.btn-hcl {
+    background-color: var(--hcl-acento);
+    border-color: var(--hcl-acento);
+    color: #fff;
+}
+
+.btn-hcl:hover,
+.btn-hcl:focus,
+.btn-hcl:active {
+    background-color: var(--hcl-acento-oscuro);
+    border-color: var(--hcl-acento-oscuro);
+    color: #fff;
+}
+
+.btn-hcl:disabled {
+    background-color: var(--hcl-acento);
+    border-color: var(--hcl-acento);
+    color: #fff;
+}
+
+.text-hcl {
+    color: var(--hcl-acento);
+}
+
+.bg-hcl {
+    background-color: var(--hcl-acento);
+    color: #fff;
+}
+
+/* ---------- Fotos (Bootstrap 5.0 no trae object-fit ni aspect-ratio) ----------
+   Todas las fotos del hotel se muestran en 4:3 y se recortan al centro sin deformarse. */
+.img-cover {
+    width: 100%;
+    object-fit: cover;
+}
+
+.foto-galeria,
+.foto-habitacion {
+    aspect-ratio: 4 / 3;
+}
+
+/* ---------- Resumen de reserva fijo en escritorio ---------- */
+@media (min-width: 992px) {
+    .resumen-fijo {
+        position: sticky;
+        top: 1rem;
+    }
+}
+/* ---------- Menu principal: desplegable en movil y tablet, en linea con el logo desde 1200px ---------- */
+.navbar-light .navbar-nav .menu-item {
+    font-size: 17px;
+    color: #1B2430;
+    border-bottom: 1px solid #E4E7EC;
+}
+
+.navbar-light .navbar-nav li:last-child .menu-item {
+    border-bottom: 0;
+}
+
+.navbar-light .navbar-nav .menu-item:hover,
+.navbar-light .navbar-nav .menu-item.active {
+    color: var(--hcl-acento);
+}
+
+.navbar-light .navbar-nav .menu-item i {
+    color: #00203B;
+}
+
+@media (min-width: 1200px) {
+    .navbar-light .navbar-nav .menu-item {
+        font-size: 15px;
+        font-weight: 500;
+        border-bottom: 0;
+    }
+
+    .navbar-light .navbar-nav .menu-cta {
+        margin-left: .75rem;
+        padding: .75rem 1.25rem;
+        border-radius: 14px;
+        background-color: var(--hcl-acento);
+        color: #fff;
+        font-weight: 600;
+    }
+
+    .navbar-light .navbar-nav .menu-cta:hover {
+        background-color: var(--hcl-acento-oscuro);
+        color: #fff;
+    }
+}
