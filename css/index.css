@@ -45,7 +45,7 @@
         .logo-sub { font-size: 10px; font-weight: 500; letter-spacing: 1.2px; color: var(--hcl-muted); }
 
 
-        /* Menu principal: desplegable en movil y tablet, en linea con el logo desde 1200px */
+        /* Menu principal */
         .navbar-light .navbar-nav .menu-item { font-size: 17px; color: var(--hcl-ink); border-bottom: 1px solid var(--hcl-line); }
         .navbar-light .navbar-nav li:last-child .menu-item { border-bottom: 0; }
         .navbar-light .navbar-nav .menu-item:hover, .navbar-light .navbar-nav .menu-item.active { color: var(--hcl-accent); }
